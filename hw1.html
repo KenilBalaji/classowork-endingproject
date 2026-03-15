@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1px;
+            background-image:linear-gradient(rgba(255, 255, 255, 0.178), #e9e6e6d8), url(https://t3.ftcdn.net/jpg/04/83/90/18/360_F_483901821_46VsNR67uJC3xIKQN4aaxR6GtAZhx9G8.jpg);
+            background-size: cover;
+        }
+
+        .home-1-p, .site-footer {
+            background-color: rgba(249, 252, 252, 0.836);
+            margin-top: 20px;
+            margin-left: 1px;
+            margin-right: 1px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .home-1-p {
+            flex: 1;
+        }
+
+        .site-footer {
+            margin-top: auto;
+        }
+
+        .main-title-pg {
+            font-size: 3em;
+            margin-left: 1px;
+            margin-right: 10px;
+        }
+        .main-para {
+            font-size: 1.5em;
+            margin-left: 1px;
+            text-align: justify;
+        }
+
+        .recently-popular {
+            display: grid;
+            gap: 1.2rem;
+        }
+
+        .recently-popular__header {
+            max-width: 800px;
+        }
+
+        .recently-popular__grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            align-items: start;
+        }
+
+        .recently-popular__grid figure {
+            margin: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.65);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .recently-popular__grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .recently-popular__grid figcaption {
+            padding: 0.75rem;
+            font-size: 0.95rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">UMA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Theorems
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Geometry Theorems</a></li>
+            <li><a class="dropdown-item" href="#">Algebra Theorems</a></li>
+            <li><a class="dropdown-item" href="#">Calculus Theorems</a></li>
+          </ul>
+        </li>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Formulas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Geometry Formulas</a></li>
+            <li><a class="dropdown-item" href="#">Algebra Formulas</a></li>
+            <li><a class="dropdown-item" href="#">Calculus Formulas</a></li>
+          </ul>
+        </li>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Graphs
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Geometry Graphs</a></li>
+            <li><a class="dropdown-item" href="#">Statistics Graphs</a></li>
+            <li><a class="dropdown-item" href="#">Algebraic Graphs</a></li>
+            <li><a class="dropdown-item" href="#">Calculus Graphs</a></li>
+          </ul>
+        </li>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Diagrams
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Geometry Diagrams</a></li>
+            <li><a class="dropdown-item" href="#">Algebra Diagrams</a></li>
+            <li><a class="dropdown-item" href="#">Calculus Diagrams</a></li>
+          </ul>
+        </li>
+        </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <div class="home-1-p">
+        <h1 class="main-title-pg">The Ultimate Math Database!</h1>
+        <p class="main-para">Welcome to the Ultimate Math Database (UMD)! This database is designed to provide a comprehensive collection of mathematical resources, including formulas, theorems, and problem-solving programs. Whether you're a student, educator, or math enthusiast, UMD has something for everyone.</p>
+        <div class="recently-popular">
+            <div class="recently-popular__header">
+                <h2>Recently Popular</h2>
+                <p>These are some of the most popular resources used in the database.</p>
+            </div>
+            <div class="recently-popular__grid">
+                <figure>
+                    <a href="#" title="Open Histogram Generator">
+                        <img src="histo-ex-img.png" alt="Histogram Generator Ex Img">
+                    </a>
+                    <figcaption>Image Created by Our Histogram Generator</figcaption>
+                </figure>
+                <figure>
+                    <a href="#" title="Open Bar Graph Generator">
+                        <img src="bar-ex-img.png" alt="Bar Graph Generator Ex Img">
+                    </a>
+                    <figcaption>Image Created by Our Bar Graph Generator</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p class="mb-0">&copy; 2026 Ultimate Math Database • Built by Kenil Balaji</p>
+    </footer>
+</body>
+</html>
